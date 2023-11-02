@@ -11,5 +11,5 @@ The Black Jack Simulator is a Java Swing application designed for blackjack enth
 
 - Open the *index.html* file
 
-![](https://github.com/Puntiss/html-myPersonalBook/screenshot/home.JPG)
+![](https://github.com/Puntiss/html-myPersonalBook/blob/master/screenshot/home.JPG)
 

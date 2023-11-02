@@ -1,5 +1,5 @@
 # Description
-The Black Jack Simulator is a Java Swing application designed for blackjack enthusiasts, offering the excitement of the game without real money bets. Players can play matches with friends or against bots placing virtual bets, and managing the cards in their hands without the pressure of real-money gambling.
+This HTML and CSS website takes inspiration from https://www.myfxbook.com/ as a personal blog to share your trading results
 
 # Usage and Modify
 

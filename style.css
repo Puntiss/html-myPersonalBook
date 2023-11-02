@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+body{
+  margin:0px;
+  font-family: 'Barlow', sans-serif;
+  user-select: none;
+  letter-spacing: 0.2rem
+}
+
+.nav{
+  padding: 5px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  transition: 0.5s ease background-color;
+}
+
+.nav a{
+  color:white;
+  text-decoration: none;
+}
+
+.nav i{
+  color:white;
+  float: right;
+  display: none;
+}
+
+.nav .title{
+  font-family: 'Cabin Condensed';
+  font-size: 40px;
+  margin: 0px 0px 0px 2%;
+}
+.nav .title:hover{
+  transition: 2s ease color;
+  color: gray;
+}
+
+.nav .section{
+  color:white;
+  float: right;
+  margin: 25px 2% 0px 0px;
+  font-family: 'Montserrat';
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  background-image: url("wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image::after{
+  background: black;
+  content:'';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.52;
+}
+
+.sidebar{
+  background: #111;
+  width: 0%;
+  height: 100%;
+  position: fixed;
+  transition: 0.4s;
+  overflow-x: hidden;/*hide the menu option*/
+  z-index: 998;/*layer*/
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.sidebar a{
+  font-size: 25px;
+  color:white;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  margin-top:10px;
+
+}
+
+.nav .section a:hover, .sidebar a:hover{
+  transition: 0.5s ease color;
+  color: gray;
+}
+
+#circle {
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      background: white;
+      display: inline-flex;
+}
+
+h1{
+  text-align: center;
+  font-size: 20px;
+}
+
+.chart{
+  width: 100%;
+  height: 30vw;/*basandosi sulla viewport width*/
+  max-height: 500px;
+  min-height: 150px;
+  margin-top: 30px;
+  background: white;
+
+}
+
+@media screen and (max-width: 550px){
+
+  .nav .section{
+    display: none;
+  }
+
+  .nav .title{
+    font-size:30;
+  }
+
+  .nav i{
+    display: block;
+    margin: 5px 2% 0px 0px;
+    font-size: 25px;
+  }
+}
